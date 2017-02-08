@@ -1,0 +1,112 @@
+@import "normalize.scss";
+@import "layout.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+	font-family: 'Goth Trump';
+	src: url('../fonts/trump_gothic_east_bold-webfont.woff2') format('woff2'),
+	url('../fonts/trump_gothic_east_bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+
+body{
+	font: 300 14px/1.6 Lato, Arial, sans-serif;
+	color: #C1C1C1;
+	background: #F6F6F6;
+
+}
+
+/* Layout */
+.ba-container{
+	background: #fff;
+	max-width: 1080px;
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+	padding: 25px;
+	margin: 75px 150px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-content{
+	position: relative;
+	img{
+		display: inline-block;
+		color: #F5F5F5;
+		padding-top: 25px;
+	}
+	&__title{
+		color: #c74c4c;
+		font: 700 102px/1 'Goth Trump', Arial, sans-serif;
+		position: absolute;
+		// transform: translateX (50%);
+		left: -80px;
+		bottom: 60px;
+		text-transform: uppercase;
+	}
+	&__subtitle {
+		margin-top: 350px;
+	}
+	&__button{
+		color: #E34D4F;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:hover{
+			border-bottom: 1px solid #c74c4c;
+		}
+	}
+
+}
